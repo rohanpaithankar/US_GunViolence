@@ -4,7 +4,8 @@ library(plotly)
 #Following is the code for UI.
 
 body <- dashboardBody(titleWidth = 10,                         #Dashboard Body
-  tags$head(tags$style(HTML('.modal.in .modal-dialog{    # HTML for landing page       
+   # HTML for landing page       
+  tags$head(tags$style(HTML('.modal.in .modal-dialog{    
                               width:100%;
                               height:100%;
                               margin:0px;
