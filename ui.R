@@ -4,7 +4,7 @@ library(plotly)
 #Following is the code for UI.
 
 body <- dashboardBody(titleWidth = 10,                         #Dashboard Body
-  tags$head(tags$style(HTML('.modal.in .modal-dialog{          
+  tags$head(tags$style(HTML('.modal.in .modal-dialog{    # HTML for landing page       
                               width:100%;
                               height:100%;
                               margin:0px;
@@ -13,7 +13,7 @@ body <- dashboardBody(titleWidth = 10,                         #Dashboard Body
                               width:100%;
                               height:100%;
                               }
-                              '))),                     # HTML for landing page 
+                              '))),                     
   fluidRow(column(width = 8,
     box(width = NULL,background = "black", solidHeader = TRUE,tags$h4("Select State"),       #Main Leaflet 'mymap'
       leafletOutput("mymap",height = 500)
